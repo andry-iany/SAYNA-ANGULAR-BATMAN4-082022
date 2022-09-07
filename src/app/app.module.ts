@@ -9,6 +9,8 @@ import { LayoutComponent } from './components/layout/layout.component';
 import { EShopComponent } from './pages/e-shop/e-shop.component';
 import { AsideLinksComponent } from './components/aside-links/aside-links.component';
 import { ArrowDownComponent } from './components/arrow-down/arrow-down.component';
+import { FilterComponent } from './pages/e-shop/components/filter/filter.component';
+import { ResultsComponent } from './pages/e-shop/components/results/results.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ArrowDownComponent } from './components/arrow-down/arrow-down.component
     EShopComponent,
     AsideLinksComponent,
     ArrowDownComponent,
+    FilterComponent,
+    ResultsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
