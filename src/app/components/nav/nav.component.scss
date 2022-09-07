@@ -1,0 +1,46 @@
+@use "../../../assets/styles/_partials/mixins";
+@use "../../../assets/styles/_partials/variables";
+
+.logo {
+  height: 2rem;
+  display: inline-block;
+  position: relative;
+
+  @include mixins.mq_md {
+    height: 3rem;
+  }
+  @include mixins.mq_lg {
+    height: 3.5rem;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  &:hover img {
+    filter: brightness(0) saturate(100%) invert(88%) sepia(74%) saturate(5057%)
+      hue-rotate(359deg) brightness(104%) contrast(106%);
+  }
+}
+
+.nav-link,
+.nav-link.active {
+  color: #fff;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  text-decoration: underline;
+}
+
+.navbar-nav {
+  column-gap: 1rem;
+}
+
+#border-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid variables.$gray-3;
+}

@@ -1,0 +1,9 @@
+@use "../../../assets/styles/_partials/mixins";
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @include mixins.border(left);
+  @include mixins.border(right);
+}
