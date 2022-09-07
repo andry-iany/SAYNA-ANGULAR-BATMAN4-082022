@@ -8,6 +8,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { EShopComponent } from './pages/e-shop/e-shop.component';
 import { AsideLinksComponent } from './components/aside-links/aside-links.component';
+import { ArrowDownComponent } from './components/arrow-down/arrow-down.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AsideLinksComponent } from './components/aside-links/aside-links.compon
     LayoutComponent,
     EShopComponent,
     AsideLinksComponent,
+    ArrowDownComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

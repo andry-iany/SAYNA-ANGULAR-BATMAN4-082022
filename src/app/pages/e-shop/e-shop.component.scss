@@ -1,0 +1,11 @@
+@use "../../../assets/styles/_partials/mixins";
+
+header {
+  text-align: center;
+  padding: 14rem 2.5rem;
+
+  @include mixins.mq_lg {
+    width: 75%;
+    text-align: left;
+  }
+}
