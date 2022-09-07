@@ -12,6 +12,7 @@ import { ArrowDownComponent } from './components/arrow-down/arrow-down.component
 import { FilterComponent } from './pages/e-shop/components/filter/filter.component';
 import { ResultsComponent } from './pages/e-shop/components/results/results.component';
 import { ArticleComponent } from './pages/e-shop/components/article/article.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ArticleComponent } from './pages/e-shop/components/article/article.comp
     FilterComponent,
     ResultsComponent,
     ArticleComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
