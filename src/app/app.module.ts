@@ -6,6 +6,8 @@ import { AppComponent } from './Root/app.component';
 import { ContainerComponent } from './components/container/container.component';
 import { NavComponent } from './components/nav/nav.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { EShopComponent } from './pages/e-shop/e-shop.component';
+import { AsideLinksComponent } from './components/aside-links/aside-links.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { LayoutComponent } from './components/layout/layout.component';
     ContainerComponent,
     NavComponent,
     LayoutComponent,
+    EShopComponent,
+    AsideLinksComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
