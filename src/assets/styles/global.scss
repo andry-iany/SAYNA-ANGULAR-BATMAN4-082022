@@ -20,6 +20,7 @@ a:focus {
 }
 
 body {
+  overflow-x: hidden;
   color: variables.$white !important;
   font-family: "SpaceGrotesk", sans-serif;
   font-size: 1.125rem;

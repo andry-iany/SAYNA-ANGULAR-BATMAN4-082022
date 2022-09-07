@@ -1,11 +1,40 @@
 @use "../../../assets/styles/_partials/mixins";
 
+$nav-height: 150px;
+
 header {
   text-align: center;
-  padding: 14rem 2.5rem;
+  padding: 6rem 2.5rem;
+  min-height: max-content;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
 
-  @include mixins.mq_lg {
-    width: 75%;
-    text-align: left;
+  span {
+    display: block;
+    padding-top: 5rem;
+    @include mixins.mq_lg {
+      max-width: 610px;
+      text-align: left;
+    }
+  }
+
+  &::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    min-height: max-content;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-blend-mode: overlay;
+    background-image: url("../../../assets/bg/bg_1.png"),
+      linear-gradient(to bottom, #000 0%, #00000052 13%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
