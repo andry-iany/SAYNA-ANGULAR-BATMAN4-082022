@@ -1,0 +1,21 @@
+<article class="px-3">
+  <div class="card position-relative rounded-0 mb-4">
+    <img [src]="article.src" class="card-img-top" [alt]="article.title" />
+    <div class="card-body p-4 text-center">
+      <h5 class="card-title text-uppercase">{{ article.title }}</h5>
+      <p class="card-text">
+        <small class="prev-price text-decoration-line-through">
+          {{ article.price.prev }}€
+        </small>
+        <span class="ms-3 h5">{{ article.price.next }}€</span>
+      </p>
+    </div>
+    <span class="sale text-uppercase d-inline-block">sale</span>
+    <img
+      src="../../../../../assets/icones/icone_7.svg"
+      alt=""
+      class="icon-heart"
+    />
+  </div>
+  <button class="btn-translucent-red d-block w-100">ajouter au panier</button>
+</article>

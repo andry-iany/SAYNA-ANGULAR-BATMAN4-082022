@@ -47,3 +47,54 @@ button {
 ul {
   list-style-type: none;
 }
+
+.btn {
+  cursor: pointer;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  @include mixins.font_rajdhani_medium;
+
+  &-group {
+    gap: 1rem 2rem;
+    @include mixins.flex($direction: column);
+
+    @include mixins.mq_md {
+      @include mixins.flex($direction: row);
+    }
+  }
+
+  &-translucent-red,
+  &-translucent-yellow {
+    width: 13rem;
+    min-width: max-content;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+  }
+
+  &-translucent-red {
+    background: variables.$grad-red-transp;
+
+    &:hover {
+      background: variables.$grad-red-opaque;
+    }
+  }
+
+  &-translucent-yellow {
+    background: variables.$grad-orange-transp;
+
+    &:hover {
+      background: variables.$grad-orange-opaque;
+    }
+  }
+
+  &-bordered {
+    position: relative;
+    border: 1px solid;
+    padding: 0.5rem 1rem;
+    border-image: variables.$grad-blue-transp 1;
+
+    &:hover {
+      background: variables.$grad-blue-transp;
+    }
+  }
+}

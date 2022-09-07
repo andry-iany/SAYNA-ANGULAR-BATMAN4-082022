@@ -1,3 +1,16 @@
 .basket {
   height: 1.5rem;
 }
+.form-select {
+  width: max-content;
+  background-color: #000 !important;
+  color: #fff;
+  border: none;
+}
+.accordion-button::after {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(8%)
+    hue-rotate(146deg) brightness(103%) contrast(103%);
+}
+.article-wrapper {
+  row-gap: 4rem;
+}

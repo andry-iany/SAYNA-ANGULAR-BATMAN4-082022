@@ -11,6 +11,7 @@ import { AsideLinksComponent } from './components/aside-links/aside-links.compon
 import { ArrowDownComponent } from './components/arrow-down/arrow-down.component';
 import { FilterComponent } from './pages/e-shop/components/filter/filter.component';
 import { ResultsComponent } from './pages/e-shop/components/results/results.component';
+import { ArticleComponent } from './pages/e-shop/components/article/article.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ResultsComponent } from './pages/e-shop/components/results/results.comp
     ArrowDownComponent,
     FilterComponent,
     ResultsComponent,
+    ArticleComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
