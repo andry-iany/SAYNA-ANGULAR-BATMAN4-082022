@@ -1,7 +1,7 @@
 <nav
   class="navbar navbar-expand-lg justify-content-between px-3 py-4 py-lg-5 gap-4 navbar-dark"
 >
-  <a class="navbar-brand logo px-4" href="/">
+  <a class="navbar-brand logo px-4" routerLink="/">
     <img src="../../../assets/logos/logohome.png" alt="Logo" />
   </a>
 
@@ -20,16 +20,44 @@
   <div class="collapse navbar-collapse" id="navbarLinks">
     <ul class="navbar-nav text-uppercase fs-4 ms-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link active" href="/">Home</a>
+        <a
+          class="nav-link"
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Home
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/game">Game</a>
+        <a
+          class="nav-link"
+          routerLink="/game"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Game
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/shop">E-shop</a>
+        <a
+          class="nav-link"
+          routerLink="/e-shop"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          E-shop
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/compte">Mon Compte</a>
+        <a
+          class="nav-link"
+          routerLink="/compte"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Mon Compte
+        </a>
       </li>
     </ul>
   </div>

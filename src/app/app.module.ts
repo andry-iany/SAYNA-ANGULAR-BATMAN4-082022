@@ -13,6 +13,7 @@ import { FilterComponent } from './pages/e-shop/components/filter/filter.compone
 import { ResultsComponent } from './pages/e-shop/components/results/results.component';
 import { ArticleComponent } from './pages/e-shop/components/article/article.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ResultsComponent,
     ArticleComponent,
     FooterComponent,
+    ProductDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
