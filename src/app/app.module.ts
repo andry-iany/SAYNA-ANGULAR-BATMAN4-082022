@@ -25,6 +25,9 @@ import { BasketImgComponent } from './components/basket-img/basket-img.component
 import { WithHeaderComponent } from './components/with-header/with-header.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BasketItemComponent } from './pages/basket/components/basket-item/basket-item.component';
+import { CheckoutComponent } from './pages/checkout/checkout.component';
+import { OrderSummaryComponent } from './pages/checkout/components/order-summary/order-summary.component';
+import { AuthenticationComponent } from './pages/checkout/components/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +53,9 @@ import { BasketItemComponent } from './pages/basket/components/basket-item/baske
     BasketImgComponent,
     WithHeaderComponent,
     BasketItemComponent,
+    CheckoutComponent,
+    OrderSummaryComponent,
+    AuthenticationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
