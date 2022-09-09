@@ -22,6 +22,7 @@ import { RecommendationsComponent } from './pages/product-detail/components/reco
 import { ArticleCardComponent } from './pages/e-shop/components/article-card/article-card.component';
 import { BasketComponent } from './pages/basket/basket.component';
 import { BasketImgComponent } from './components/basket-img/basket-img.component';
+import { WithHeaderComponent } from './components/with-header/with-header.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { BasketImgComponent } from './components/basket-img/basket-img.component
     ArticleCardComponent,
     BasketComponent,
     BasketImgComponent,
+    WithHeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
