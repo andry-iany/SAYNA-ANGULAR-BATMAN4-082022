@@ -22,4 +22,14 @@
       (onItemDelete)="onItemDelete(item.article.id)"
     ></app-basket-item>
   </section>
+
+  <p class="text-end py-4 px-3">
+    <span class="fw-light text-uppercase me-4">Sous total</span>
+    <span class="h4"> {{ subTotal }}€ </span>
+  </p>
+
+  <div class="d-flex justify-content-center gap-5 pt-4">
+    <button class="btn-translucent-blue">CONTINUER MES ACHATS</button>
+    <button class="btn-translucent-blue">PASSER LA COMMANDE</button>
+  </div>
 </section>

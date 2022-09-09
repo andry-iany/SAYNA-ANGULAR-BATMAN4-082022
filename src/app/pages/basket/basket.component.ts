@@ -44,4 +44,11 @@ export class BasketComponent implements OnInit {
   }
 
   ngOnInit(): void {}
+
+  get subTotal() {
+    return this.basketItems.reduce(
+      (acc, item) => acc + item.article.price.next,
+      0
+    );
+  }
 }

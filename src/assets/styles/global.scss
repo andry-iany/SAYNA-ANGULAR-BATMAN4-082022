@@ -67,11 +67,20 @@ ul {
 
   &-translucent-red,
   &-translucent-red-blue,
+  &-translucent-blue,
   &-translucent-yellow {
     width: 13rem;
     min-width: max-content;
     padding: 1rem 2rem;
     text-transform: uppercase;
+  }
+
+  &-translucent-blue {
+    background: variables.$grad-blue-transp-3;
+
+    &:hover {
+      background: variables.$grad-blue-opaque-3;
+    }
   }
 
   &-translucent-red {
