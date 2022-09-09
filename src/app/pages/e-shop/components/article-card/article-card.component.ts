@@ -1,15 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-type Price = {
-  prev: number;
-  next: number;
-};
-
-type Article = {
-  src: string;
-  title: string;
-  price: Price;
-};
+import { Article } from 'src/app/types';
 
 @Component({
   selector: 'app-article-card',

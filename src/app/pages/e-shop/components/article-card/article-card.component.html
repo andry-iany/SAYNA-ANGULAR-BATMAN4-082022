@@ -1,4 +1,8 @@
-<div class="card rounded-0 mb-4">
+<div
+  class="card rounded-0 mb-4"
+  [routerLink]="'/e-shop/product/' + article.id"
+  routerLinkActive="active"
+>
   <img [src]="article.src" class="card-img-top" [alt]="article.title" />
   <div class="card-body p-4 text-center">
     <h5 class="card-title text-uppercase">{{ article.title }}</h5>

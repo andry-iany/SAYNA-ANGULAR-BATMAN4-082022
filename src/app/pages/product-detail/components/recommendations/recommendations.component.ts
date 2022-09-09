@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from 'src/app/types';
 
 @Component({
   selector: 'app-recommendations',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recommendations.component.scss'],
 })
 export class RecommendationsComponent implements OnInit {
-  recommendations = [
+  recommendations: Article[] = [
     {
+      id: 1,
       src: '../../../../../assets/articles/article_1.png',
       title: 'Produit',
       price: {
@@ -16,6 +18,7 @@ export class RecommendationsComponent implements OnInit {
       },
     },
     {
+      id: 2,
       src: '../../../../../assets/articles/article_1.png',
       title: 'Produit',
       price: {
@@ -24,6 +27,7 @@ export class RecommendationsComponent implements OnInit {
       },
     },
     {
+      id: 3,
       src: '../../../../../assets/articles/article_1.png',
       title: 'Produit',
       price: {
