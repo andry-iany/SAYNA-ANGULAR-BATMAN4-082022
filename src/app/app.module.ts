@@ -29,6 +29,7 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { OrderSummaryComponent } from './pages/checkout/components/order-summary/order-summary.component';
 import { AuthenticationComponent } from './pages/checkout/components/authentication/authentication.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { HttpClientModule } from '@angular/common/http';
     CheckoutComponent,
     OrderSummaryComponent,
     AuthenticationComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
