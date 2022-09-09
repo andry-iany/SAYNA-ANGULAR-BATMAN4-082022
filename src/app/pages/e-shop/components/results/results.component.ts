@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { TArticle } from 'src/app/types';
+
+const api = 'http://localhost:5678/articles';
 
 @Component({
   selector: 'app-results',
@@ -6,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./results.component.scss'],
 })
 export class ResultsComponent implements OnInit {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   articles = [
     {
@@ -46,6 +50,8 @@ export class ResultsComponent implements OnInit {
       id: 6,
     },
   ];
+
+  articles$ = this.http.get<TArticle[]>(api);
 
   ngOnInit(): void {}
 }

@@ -28,6 +28,7 @@ import { BasketItemComponent } from './pages/basket/components/basket-item/baske
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { OrderSummaryComponent } from './pages/checkout/components/order-summary/order-summary.component';
 import { AuthenticationComponent } from './pages/checkout/components/authentication/authentication.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,12 @@ import { AuthenticationComponent } from './pages/checkout/components/authenticat
     OrderSummaryComponent,
     AuthenticationComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

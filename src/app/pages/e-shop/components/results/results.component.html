@@ -13,7 +13,7 @@
     </select>
   </div>
 
-  <div class="row article-wrapper">
+  <div class="row article-wrapper" *ngIf="articles$ | async as articles">
     <div *ngFor="let article of articles" class="col-4">
       <app-article [article]="article"></app-article>
     </div>

@@ -3,14 +3,18 @@
   [routerLink]="'/e-shop/product/' + article.id"
   routerLinkActive="active"
 >
-  <img [src]="article.src" class="card-img-top" [alt]="article.title" />
+  <img
+    [src]="'http://localhost:5678/' + article.src"
+    class="card-img-top"
+    [alt]="article.name"
+  />
   <div class="card-body p-4 text-center">
-    <h5 class="card-title text-uppercase">{{ article.title }}</h5>
+    <h5 class="card-title text-uppercase">{{ article.name }}</h5>
     <p class="card-text">
       <small class="prev-price text-decoration-line-through">
-        {{ article.price.prev }}€
+        {{ article.price }}€
       </small>
-      <span class="ms-3 h5">{{ article.price.next }}€</span>
+      <span class="ms-3 h5">{{ article.price }}€</span>
     </p>
   </div>
 </div>
