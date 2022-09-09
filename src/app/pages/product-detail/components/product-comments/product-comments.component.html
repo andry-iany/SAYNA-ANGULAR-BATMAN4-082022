@@ -1,0 +1,35 @@
+<h3>Commentaires</h3>
+
+<div
+  *ngFor="let review of reviews"
+  class="border-secondary border-bottom pb-4 pt-4"
+>
+  <div class="d-flex gap-3">
+    <app-product-rating [rating]="review.rating"></app-product-rating>
+    <h4 class="reviewer-name text-uppercase w-100 fw-light">
+      {{ review.reviewer }}
+    </h4>
+    <span class="text-secondary">11.10.21</span>
+  </div>
+
+  <p>{{ review.content }}</p>
+</div>
+
+<div
+  class="pagination-btns d-flex align-items-center justify-content-end gap-3"
+>
+  <img
+    class="pagination-btn"
+    src="../../../../../assets/logos/icon_flèche_1.png"
+    alt=""
+  />
+  <div>
+    <span class="pagination-page">1</span>
+    <span class="pagination-page">2</span>
+  </div>
+  <img
+    class="pagination-btn"
+    src="../../../../../assets/logos/icon_flèche_2.png"
+    alt=""
+  />
+</div>

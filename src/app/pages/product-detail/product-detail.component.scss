@@ -1,0 +1,32 @@
+@use "../../../assets/styles/_partials/variables";
+
+.product-detail {
+  padding: 200px 1.6rem 0 1.4rem;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item a {
+  color: #fff;
+  text-decoration: none;
+}
+.basket {
+  height: 1.5rem;
+}
+.comment {
+  font-size: 12px;
+  color: #9e9e9e;
+}
+.form-select {
+  width: max-content;
+  background-color: #000 !important;
+  color: #fff;
+}
+.bookmark {
+  border-radius: 15px;
+  border: 2px solid variables.$red-1;
+  padding: 0.5rem 3.5rem;
+}
+
+.detail-content {
+  margin-bottom: 0.25rem;
+}

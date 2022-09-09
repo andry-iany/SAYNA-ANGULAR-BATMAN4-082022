@@ -1,0 +1,21 @@
+@use "../../../../../assets/styles/_partials/variables";
+
+h3 {
+  margin: 4rem 0 2rem 0;
+}
+
+.reviewer-name {
+  color: variables.$blue;
+}
+
+.pagination-btn {
+  height: 1rem;
+}
+
+.pagination-btns {
+  padding: 7rem 1.5rem;
+}
+.pagination-page:not(:last-child)::after {
+  content: "-";
+  margin: 0 0.25rem;
+}

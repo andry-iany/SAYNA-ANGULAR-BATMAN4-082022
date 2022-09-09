@@ -49,10 +49,12 @@ ul {
 }
 
 .btn {
-  cursor: pointer;
-  font-size: 1.25rem;
-  white-space: nowrap;
-  @include mixins.font_rajdhani_medium;
+  &-reset {
+    cursor: pointer;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    @include mixins.font_rajdhani_medium;
+  }
 
   &-group {
     gap: 1rem 2rem;
@@ -64,6 +66,7 @@ ul {
   }
 
   &-translucent-red,
+  &-translucent-red-blue,
   &-translucent-yellow {
     width: 13rem;
     min-width: max-content;
@@ -76,6 +79,14 @@ ul {
 
     &:hover {
       background: variables.$grad-red-opaque;
+    }
+  }
+
+  &-translucent-red-blue {
+    background: variables.$grad-br-transp;
+
+    &:hover {
+      background: variables.$grad-br-opaque;
     }
   }
 

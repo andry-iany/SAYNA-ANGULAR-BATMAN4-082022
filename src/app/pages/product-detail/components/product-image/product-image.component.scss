@@ -1,0 +1,16 @@
+.img-wrapper img {
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid #fff;
+  display: block;
+}
+
+.img-highlight {
+  width: 100%;
+}
+
+.imgs-other img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+}

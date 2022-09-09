@@ -14,6 +14,10 @@ import { ResultsComponent } from './pages/e-shop/components/results/results.comp
 import { ArticleComponent } from './pages/e-shop/components/article/article.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { ProductImageComponent } from './pages/product-detail/components/product-image/product-image.component';
+import { ProductRatingComponent } from './pages/product-detail/components/product-rating/product-rating.component';
+import { ButtonComponent } from './components/button/button.component';
+import { ProductCommentsComponent } from './pages/product-detail/components/product-comments/product-comments.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,10 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
     ArticleComponent,
     FooterComponent,
     ProductDetailComponent,
+    ProductImageComponent,
+    ProductRatingComponent,
+    ButtonComponent,
+    ProductCommentsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
