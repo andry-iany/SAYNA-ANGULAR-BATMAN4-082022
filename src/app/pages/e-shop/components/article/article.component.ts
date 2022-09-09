@@ -9,6 +9,7 @@ type Article = {
   src: string;
   title: string;
   price: Price;
+  id: string | number;
 };
 
 @Component({

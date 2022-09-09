@@ -6,5 +6,12 @@
     alt=""
     class="icon-heart"
   />
-  <button class="btn-translucent-red d-block w-100">ajouter au panier</button>
+  <button
+    [routerLink]="'/e-shop/product/' + article.id"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: false }"
+    class="btn-translucent-red d-block w-100"
+  >
+    ajouter au panier
+  </button>
 </article>

@@ -6,7 +6,7 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/e-shop' },
   { path: 'e-shop', component: EShopComponent },
-  { path: 'e-shop/:productId', component: ProductDetailComponent },
+  { path: 'e-shop/product/:productId', component: ProductDetailComponent },
   { path: 'game', component: ProductDetailComponent },
   { path: 'compte', component: ProductDetailComponent },
 ];
