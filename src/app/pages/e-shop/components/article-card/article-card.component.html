@@ -1,0 +1,12 @@
+<div class="card rounded-0 mb-4">
+  <img [src]="article.src" class="card-img-top" [alt]="article.title" />
+  <div class="card-body p-4 text-center">
+    <h5 class="card-title text-uppercase">{{ article.title }}</h5>
+    <p class="card-text">
+      <small class="prev-price text-decoration-line-through">
+        {{ article.price.prev }}€
+      </small>
+      <span class="ms-3 h5">{{ article.price.next }}€</span>
+    </p>
+  </div>
+</div>

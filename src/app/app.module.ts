@@ -18,6 +18,8 @@ import { ProductImageComponent } from './pages/product-detail/components/product
 import { ProductRatingComponent } from './pages/product-detail/components/product-rating/product-rating.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ProductCommentsComponent } from './pages/product-detail/components/product-comments/product-comments.component';
+import { RecommendationsComponent } from './pages/product-detail/components/recommendations/recommendations.component';
+import { ArticleCardComponent } from './pages/e-shop/components/article-card/article-card.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { ProductCommentsComponent } from './pages/product-detail/components/prod
     ProductRatingComponent,
     ButtonComponent,
     ProductCommentsComponent,
+    RecommendationsComponent,
+    ArticleCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
