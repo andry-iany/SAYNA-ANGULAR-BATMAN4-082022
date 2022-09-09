@@ -9,7 +9,7 @@
       </ol>
     </nav>
 
-    <img class="basket" src="../../assets/icones/icone_1.png" alt="Basket" />
+    <app-basket-img></app-basket-img>
   </div>
 
   <div class="row border-secondary border-bottom pb-4 mb-4">
@@ -41,7 +41,9 @@
       </div>
 
       <div class="d-flex gap-4 border-secondary border-bottom pt-3 pb-5 mb-4">
-        <app-button variant="red-blue"> ajouter au panier </app-button>
+        <app-button variant="red-blue" routerLink="/e-shop/basket">
+          ajouter au panier
+        </app-button>
         <img
           src="../../../assets/icones/icone_7.svg"
           alt="Bookmark"

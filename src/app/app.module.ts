@@ -20,6 +20,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { ProductCommentsComponent } from './pages/product-detail/components/product-comments/product-comments.component';
 import { RecommendationsComponent } from './pages/product-detail/components/recommendations/recommendations.component';
 import { ArticleCardComponent } from './pages/e-shop/components/article-card/article-card.component';
+import { BasketComponent } from './pages/basket/basket.component';
+import { BasketImgComponent } from './components/basket-img/basket-img.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { ArticleCardComponent } from './pages/e-shop/components/article-card/art
     ProductCommentsComponent,
     RecommendationsComponent,
     ArticleCardComponent,
+    BasketComponent,
+    BasketImgComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
