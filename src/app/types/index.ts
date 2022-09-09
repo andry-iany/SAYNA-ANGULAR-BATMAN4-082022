@@ -9,3 +9,8 @@ export type Article = {
   price: Price;
   id: string | number;
 };
+
+export type BasketItem = {
+  article: Article;
+  articleCount: number;
+};

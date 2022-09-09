@@ -11,4 +11,15 @@
 
     <app-basket-img></app-basket-img>
   </div>
+
+  <p>Récapitulatif du panier</p>
+
+  <section class="d-flex flex-column gap-4">
+    <app-basket-item
+      *ngFor="let item of basketItems"
+      [item]="item"
+      (onCountChange)="onItemCountChange(item.article.id, $event)"
+      (onItemDelete)="onItemDelete(item.article.id)"
+    ></app-basket-item>
+  </section>
 </section>

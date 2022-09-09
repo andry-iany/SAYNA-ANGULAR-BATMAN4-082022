@@ -23,6 +23,8 @@ import { ArticleCardComponent } from './pages/e-shop/components/article-card/art
 import { BasketComponent } from './pages/basket/basket.component';
 import { BasketImgComponent } from './components/basket-img/basket-img.component';
 import { WithHeaderComponent } from './components/with-header/with-header.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BasketItemComponent } from './pages/basket/components/basket-item/basket-item.component';
 
 @NgModule({
   declarations: [
@@ -47,8 +49,9 @@ import { WithHeaderComponent } from './components/with-header/with-header.compon
     BasketComponent,
     BasketImgComponent,
     WithHeaderComponent,
+    BasketItemComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
