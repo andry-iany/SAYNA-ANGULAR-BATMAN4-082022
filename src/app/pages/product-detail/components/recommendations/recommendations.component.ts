@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TArticle } from 'src/app/types';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-recommendations',
@@ -7,9 +7,9 @@ import { TArticle } from 'src/app/types';
   styleUrls: ['./recommendations.component.scss'],
 })
 export class RecommendationsComponent implements OnInit {
-  recommendations: TArticle[] = [];
+  constructor(private productService: ProductService) {}
 
-  constructor() {}
+  recommendations$ = this.productService.getAllArticles(3);
 
   ngOnInit(): void {}
 }

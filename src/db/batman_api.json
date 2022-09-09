@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "SAC A DOS",
-      "src": "/article_1.png",
+      "src": "/article_11.png",
       "category": "SAC",
       "universe": "The Batman",
       "price": "25",
@@ -18,7 +18,7 @@
     {
       "id": "2",
       "name": "POSTER BATMAN (2022)",
-      "src": "/article_1.png",
+      "src": "/article_8.png",
       "category": "POSTER",
       "universe": "The Batman",
       "price": "32",
@@ -33,7 +33,7 @@
     {
       "id": "3",
       "name": "SWEAT \"WHY SO SERIOUS\"",
-      "src": "/article_1.png",
+      "src": "/article_7.png",
       "category": "SWEAT",
       "universe": "The Batman",
       "price": "32",
@@ -48,7 +48,7 @@
     {
       "id": "4",
       "name": "HORLOGE",
-      "src": "/article_1.png",
+      "src": "/article_8.png",
       "category": "Équipement",
       "universe": "Batman V Superman",
       "price": "8",
@@ -63,7 +63,7 @@
     {
       "id": "5",
       "name": "MUG",
-      "src": "/article_1.png",
+      "src": "/article_4.png",
       "category": "Équipements ",
       "universe": "Batman V Superman",
       "price": "15",
@@ -78,7 +78,7 @@
     {
       "id": "6",
       "name": "MUG DE VOYAGE",
-      "src": "/article_1.png",
+      "src": "/article_3.png",
       "category": "Équipements ",
       "universe": "Batman et Robin",
       "price": "25",
@@ -93,7 +93,7 @@
     {
       "id": "7",
       "name": "SWEAT \"WHY SO SERIOUS\"",
-      "src": "/article_1.png",
+      "src": "/article_7.png",
       "category": "Vêtements ",
       "universe": "Batman et Robin",
       "price": "32",
@@ -108,7 +108,7 @@
     {
       "id": "8",
       "name": "T-SHIRT BATMOBILE",
-      "src": "/article_1.png",
+      "src": "/article_5.png",
       "category": "Vêtements ",
       "universe": "Autres (comics, dessins animés)",
       "price": "25",
@@ -123,7 +123,7 @@
     {
       "id": "9",
       "name": "HORLOGE TOURNANTE",
-      "src": "/article_1.png",
+      "src": "/article_6.png",
       "category": "Équipements ",
       "universe": "The Dark Night Rises",
       "price": "8",
@@ -138,7 +138,7 @@
     {
       "id": "10",
       "name": "SWEAT \"WHY SO SERIOUS\"",
-      "src": "/article_1.png",
+      "src": "/article_7.png",
       "category": "Vêtements ",
       "universe": "The Dark Night Rises",
       "price": "32",
@@ -153,7 +153,7 @@
     {
       "id": "11",
       "name": "SWEAT \"WHY SO SERIOUS\"",
-      "src": "/article_1.png",
+      "src": "/article_7.png",
       "category": "Vêtements ",
       "universe": "",
       "price": "32",
@@ -168,7 +168,7 @@
     {
       "id": "12",
       "name": "MUG DE VOYAGE",
-      "src": "/article_1.png",
+      "src": "/article_4.png",
       "category": "Équipements ",
       "universe": "",
       "price": "8",
@@ -183,7 +183,7 @@
     {
       "id": "13",
       "name": "MUG DE VOYAGE",
-      "src": "/article_1.png",
+      "src": "/article_4.png",
       "category": "Équipements ",
       "universe": "",
       "price": "8",

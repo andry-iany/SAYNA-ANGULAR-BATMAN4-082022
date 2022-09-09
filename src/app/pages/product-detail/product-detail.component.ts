@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProductService } from 'src/app/services/product.service';
+import { concatMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-product-detail',
@@ -21,7 +24,18 @@ export class ProductDetailComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  article$!: ReturnType<typeof this.productService.getArticleById>;
 
-  ngOnInit(): void {}
+  constructor(
+    private productService: ProductService,
+    private route: ActivatedRoute
+  ) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      this.article$ = this.productService.getArticleById(
+        params.get('productId') || ''
+      );
+    });
+  }
 }

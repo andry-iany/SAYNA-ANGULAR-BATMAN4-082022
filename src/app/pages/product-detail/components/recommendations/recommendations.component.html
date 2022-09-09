@@ -1,6 +1,9 @@
 <h2>Produits similaires</h2>
 
-<div class="d-flex align-items-center justify-content-between gap-3">
+<div
+  *ngIf="recommendations$ | async as recommendations"
+  class="d-flex align-items-center justify-content-between gap-3"
+>
   <img
     class="pagination-btn"
     src="../../../../../assets/logos/icon_flèche_1.png"

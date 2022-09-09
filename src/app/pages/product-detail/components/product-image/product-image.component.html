@@ -1,13 +1,14 @@
 <div class="d-flex gap-2 img-wrapper">
   <img
-    src="../../../assets/articles/article_1.png"
+    [src]="'http://localhost:5678/' + srcSet[0]"
     alt=""
     class="img-highlight"
   />
   <div class="imgs-other d-flex flex-column">
-    <img src="../../../assets/articles/article_1.png" alt="" />
-    <img src="../../../assets/articles/article_1.png" alt="" />
-    <img src="../../../assets/articles/article_1.png" alt="" />
-    <img src="../../../assets/articles/article_1.png" alt="" />
+    <img
+      *ngFor="let src of srcSet"
+      [src]="'http://localhost:5678/' + src"
+      alt=""
+    />
   </div>
 </div>
